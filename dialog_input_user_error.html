@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Bacchanalia</title>
+</head>
+<body>
+
+<th:block th:fragment="dialogInputUserError">
+	<div id="inputUserError" title="ユーザー情報入力エラー" class="hidden">
+		<div class="error familyNameError hidden">「姓」が空欄です。</div>
+		<div class="error firstNameError hidden">「名」が空欄です。</div>
+		<div class="error familyNameKanaError hidden">「姓ふりがな」が空欄です。<br />
+													  「姓ふりがな」に平仮名以外の文字が含まれています。</div>
+		<div class="error firstNameKanaError hidden">「名ふりがな」が空欄です。<br />
+													 「名ふりがな」に平仮名以外の文字が含まれています。</div>
+		<div class="error userNameError hidden">「ユーザー名」が空欄です。<br />
+												「ユーザー名」の書式が不正です。</div>
+		<div class="error passwordError hidden">「パスワード」が空欄です。<br />
+												「パスワード」に半角英数以外の文字が含まれています。<br>
+												「パスワード」の文字数が最小値未満です。</div>
+	</div>
+</th:block>
+
+
+</body>
+</html>
